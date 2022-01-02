@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set_wallpaper &
+dwm_bar &
+# picom --config ~/.config/suckless/scripts/
+# xcompmgr &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# dunst &
+xset r rate 300 50 &
+sxhkd &
+~/.config/suckless/scripts/mouse.sh &
+
+exec dwm > /dev/null 2>&1

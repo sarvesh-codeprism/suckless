@@ -1,0 +1,16 @@
+# My Hotkeys
+
+Print
+	maim -s --format png /dev/stdout | xclip -selection clipboard -t image/png -i
+
+super + Print 
+	maim --select | tee ~/Pictures/$(date +%s).png | xclip -sel c -t image/png
+
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	pamixer -{i,d,t} 1; kill -34 $(cat ~/.cache/pidofbar)
+
+XF86MonBrightnessUp
+  brightnessctl s +1%
+
+XF86MonBrightnessDown
+  brightnessctl s 1%-
