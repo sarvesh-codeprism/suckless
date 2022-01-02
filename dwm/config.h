@@ -2,19 +2,19 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:size=11", "JoyPixels:pixelsize=11:antialias=true:autohint=true"};
-static const char dmenufont[]       = "JetBrains Mono:size=11";
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static const char *fonts[]          = { "Operator Mono:size=14", "JoyPixels:pixelsize=14:antialias=true:autohint=true"};
+static const char dmenufont[]       = "Operator Mono:size=14";
+static char normbgcolor[]           = "#070417";
+static char normbordercolor[]       = "#070417";
+static char normfgcolor[]           = "#c0cfdf";
+static char selfgcolor[]            = "#c0cfdf";
+static char selbordercolor[]        = "#86909c";
+static char selbgcolor[]            = "#303856";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
